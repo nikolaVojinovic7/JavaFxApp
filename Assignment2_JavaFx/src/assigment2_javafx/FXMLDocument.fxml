@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assigment2_javafx.FXMLDocumentController">
+    <children>
+      <TableView fx:id="tb_AllMembers" layoutX="327.0" layoutY="20.0" prefHeight="560.0" prefWidth="450.0">
+        <columns>
+            <TableColumn fx:id="clm_ID" prefWidth="60.0" text="ID" />
+          <TableColumn fx:id="clm_FName" prefWidth="75.0" text="First Name" />
+          <TableColumn fx:id="clm_LName" prefWidth="75.0" text="Last Name" />
+            <TableColumn fx:id="clm_NumGames" prefWidth="60.0" text="# Games" />
+            <TableColumn fx:id="clm_NumWins" prefWidth="60.0" text="# Wins" />
+            <TableColumn fx:id="clm_NumLosses" prefWidth="60.0" text="# Losses" />
+            <TableColumn fx:id="clm_WinRate" prefWidth="60.0" text="Win Rate" />
+        </columns>
+      </TableView>
+      <Label layoutX="19.0" layoutY="16.0" text="Chess Club" underline="true">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="50.0" text="Add a Member">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="83.0" text="First Name" />
+      <TextField fx:id="txt_FName" layoutX="145.0" layoutY="79.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="20.0" layoutY="113.0" text="Last Name" />
+      <TextField fx:id="txt_LName" layoutX="145.0" layoutY="109.0" prefHeight="25.0" prefWidth="150.0" />
+        <Button fx:id="btn_AddMember" layoutX="176.0" layoutY="148.0" onAction="#handleBtnAddMemberAction" text="Add Member" />
+      <Label layoutX="20.0" layoutY="200.0" text="Delete A Member">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="233.0" text="Member ID" />
+      <TextField fx:id="txt_DelMember" layoutX="146.0" layoutY="229.0" prefHeight="25.0" prefWidth="150.0" />
+      <Button fx:id="btn_DelMember" layoutX="171.0" layoutY="269.0" onAction="#handleBtnDelMemberAction" text="Delete Member" />
+      <Label layoutX="19.0" layoutY="307.0" text="Add a Win">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="340.0" text="Member ID" />
+      <TextField fx:id="txt_AddWinID" layoutX="145.0" layoutY="336.0" prefHeight="25.0" prefWidth="150.0" />
+      <Button fx:id="btn_AddWIn" layoutX="188.0" layoutY="371.0" onAction="#handleBtnAddWinAction" text="Add Win" />
+      <Label layoutX="19.0" layoutY="414.0" text="Add a Loss">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="447.0" text="Member ID" />
+      <TextField fx:id="txt_AddLossID" layoutX="145.0" layoutY="443.0" prefHeight="25.0" prefWidth="150.0" />
+      <Button fx:id="btn_AddLoss" layoutX="188.0" layoutY="480.0" onAction="#handleBtnAddLossAction" text="Add Loss" />
+      <Button fx:id="btn_ShowBestPlayer" layoutX="18.0" layoutY="555.0" onAction="#handleBtnBestPlayerAction" text="Best Player" />
+      <Button fx:id="btn_ShowMostWin" layoutX="227.0" layoutY="555.0" onAction="#handleBtnMostWinsAction" text="Most Wins" />
+    </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</AnchorPane>
