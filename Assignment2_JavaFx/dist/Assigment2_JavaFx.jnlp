@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Assigment2_JavaFx.jnlp">
+  <information>
+    <title>Assigment2_JavaFx</title>
+    <vendor>101117858</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Assigment2_JavaFx.jar" size="9038" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Assigment2_JavaFx" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="assigment2_javafx.Assigment2_JavaFx"  name="Assigment2_JavaFx" />
+  <update check="always"/>
+</jnlp>
